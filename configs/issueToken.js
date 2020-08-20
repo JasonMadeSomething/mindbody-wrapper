@@ -1,6 +1,6 @@
 const mindBodyURL = 'https://api.mindbodyonline.com/public/v6/'
 
-function issueTokenConfig (siteId, username, password) {
+function issueTokenConfig (siteId, apiKey, data) {
   return {
     method: 'post',
     baseURL: mindBodyURL,
@@ -8,9 +8,9 @@ function issueTokenConfig (siteId, username, password) {
     headers: {
       'Content-Type': 'application/json',
       SiteId: siteId,
-      'Api-Key': process.env.ApiKey
+      'Api-Key': apiKey
     },
-    data: { Username: username, Password: password }
+    data: data
   }
 }
 

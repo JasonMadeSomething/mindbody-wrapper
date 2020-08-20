@@ -11,7 +11,7 @@ function getSalesConfig (token, siteId, params) {
       'Api-Key': process.env.ApiKey,
       Authorization: token
     },
-    ... params && { params: params }
+    ...(params && { params: params })
   }
 }
 
@@ -26,7 +26,7 @@ function getServicesConfig (token, siteId, params) {
       'Api-Key': process.env.ApiKey,
       Authorization: token
     },
-    ... params && { params: params }
+    ...(params && { params: params })
   }
 }
 
@@ -41,6 +41,6 @@ function getProductsConfig (token, siteId, params) {
       'Api-Key': process.env.ApiKey,
       Authorization: token
     },
-    ... params && { params: params }
+    ...(params && { params: params })
   }
 }

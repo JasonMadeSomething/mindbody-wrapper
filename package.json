@@ -1,4 +1,19 @@
 {
   "name": "@jasonmadesomething/mindbody-wrapper",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Jason Teitelman",
+    "email": "jasonmadesomething@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JasonMadeSomething/mindbody-wrapper.git"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^26.4.1"
+  }
 }
